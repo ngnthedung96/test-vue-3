@@ -37,5 +37,4 @@ export const generateMockApps = (count: number): App[] => {
   );
 };
 
-// Tạo 50 ứng dụng mock
 export const mockApps: App[] = generateMockApps(50);

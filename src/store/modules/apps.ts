@@ -1,4 +1,3 @@
-// src/store/apps.ts
 import { mockApps } from "@/mocks/mock-app";
 import { App, AppType } from "@/constants/apps";
 import { Module } from "vuex";
@@ -35,11 +34,9 @@ const actions = {
 
     switch (sort) {
       case "lastest":
-        console.log("lastest");
         filteredApps = filteredApps.sort((a, b) => b.createdAt - a.createdAt);
         break;
       case "oldest":
-        console.log("oldest");
         filteredApps = filteredApps.sort((a, b) => a.createdAt - b.createdAt);
         break;
       case "popular":
@@ -48,8 +45,6 @@ const actions = {
       default:
         break;
     }
-    console.log("commit nè");
-    // Commit các apps vào state
     commit("setApps", filteredApps);
   },
 };

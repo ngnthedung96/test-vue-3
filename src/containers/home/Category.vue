@@ -15,7 +15,6 @@
 </template>
 
 <script lang="ts">
-import { AppType } from "@/constants/apps";
 import { defineComponent, PropType } from "vue";
 import { useRouter } from "vue-router";
 
@@ -27,8 +26,7 @@ export default defineComponent({
       default: "all",
     },
   },
-  setup(props) {
-    console.log(props.selectedCategory, "props");
+  setup() {
     const router = useRouter();
 
     const handleMenuClick = (e: any) => {

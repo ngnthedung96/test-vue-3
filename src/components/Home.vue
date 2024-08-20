@@ -15,7 +15,6 @@ import DataTable from "@/containers/home/DataTable.vue";
 import { defineComponent, computed, watch, onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useStore } from "vuex";
-import { App } from "@/constants/apps"; // Adjust path as necessary
 
 export default defineComponent({
   name: "HomeComponent",

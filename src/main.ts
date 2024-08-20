@@ -10,7 +10,6 @@ import * as AntIcons from "@ant-design/icons-vue";
 import "bootstrap";
 
 const app = createApp(App);
-// Register Ant Design icons globally
 Object.entries(AntIcons).forEach(([name, component]) => {
   app.component(name, component);
 });
